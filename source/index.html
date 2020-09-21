@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/style.min.css">
+</head>
+<body>
+    <h1>Prosto zagolovok</h1>
+    <h2>Hello</h2>
+    <h3>Dog</h3>
+    <h1>DOG</h1>
+    <p>fuck that</p>
+    <h2>hemlo</h2>
+    <p>WTF?!</p>
+    <p>HTML обновляется, а вот less и css почему-то нет</p>
+    <p>hm</p>
+    <p>gulp is shit</p>
+</body>
+</html>
+
+<!--
+    const gulp = require('gulp');
+const less = require('gulp-less');
+const browserSync = require('browser-sync').create();
+
+function style () {
+    return gulp.src('./less/**/*.less')
+            .pipe(less())
+            .pipe(gulp.dest('./css'))
+            .pipe(browserSync.stream())
+
+}
+
+function watch () {
+    browserSync.init( {
+        server: {
+            baseDir:'./'
+        }
+    }
+    )
+    gulp.watch('./less/**/*.less', style);
+    gulp.watch('./*.html').on('change', browserSync.reload);
+}
+
+exports.style = style;
+exports.watch = watch;
+-->

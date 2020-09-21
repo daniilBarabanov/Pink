@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.less"],"names":[],"mappings":"AACA,I,CACI,qB,CAEJ,E,CACI,U,CAEJ,C,CACI,a","file":"style.min.css","sourcesContent":["@bg-color:blue;\nbody {\n    background-color: @bg-color;\n}\nh1 {\n    color:#ffffff;\n}\np {\n    color:lawngreen;\n}"]}
