@@ -2,6 +2,15 @@
     === Разметка верхней части шапки (лого + меню) ===
 */
 .page-header {
+    /*
+    background:  
+    url(../img/back-mobile-1-x-jpg.png) no-repeat;
+    background-size: 100%;
+    */
+}
+.page-header__background {
+    width: 100%;
+    height: 396px;
     background:  
     url(../img/back-mobile-1-x-jpg.png) no-repeat;
     background-size: 100%;
@@ -29,7 +38,6 @@
     margin-right: 20px;
 }
 .main-nav {
-    position: absolute;
     top: 67px;
     z-index: 1;
     display: none;
@@ -39,10 +47,9 @@
     width: 100%;
 }
 .nav-list {
-    height: 256px;
+    height: 252px;
     width:100%;
     margin: 0;
-    border-bottom: 1px solid #000;
     clip: initial;
     position: relative;
     visibility: visible;
@@ -56,6 +63,9 @@
     background-color:#283645;
     box-shadow: 0 -1px 0 #000,
      inset 0 1px 0 rgba(255,255,255,.15);
+}
+.nav-list__item:last-child {
+    border-bottom: 1px solid #000000;
 }
 .nav-list__item-link {
     font-family: 'Open Sans', sans-serif;
@@ -71,6 +81,8 @@
 */
 
 /* === Разметка средней части шапки === */
+.page-header__top-background {
+}
 .page-header__heading {
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -80,8 +92,8 @@
     text-align: center;
     color:#ffffff;
     margin:0 auto;
-    margin-top: 25px;
     margin-bottom: 33px;
+    padding-top: 29px;
 }
 .page-header__image {
     width: inherit;

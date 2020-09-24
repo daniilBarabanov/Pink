@@ -17,4 +17,4 @@ function myFunction() {
       y.style.background = "#283645 ";
     }
   }
-  console.log("shiiit");
+  console.log("adadada");
