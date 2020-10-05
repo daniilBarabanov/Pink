@@ -52,18 +52,19 @@
             <h2 class="page-header__heading">
                 Взгляните на жизнь иначе!
             </h2>
-            <img class="page-header__image" src="img/iphone-5-in-hand-png.png" height="314" width="320" alt="Рука с телефоном">
+            <div class="page-header__top-hand">
+            </div>
             </div>
             </div>
             <!--
                 Разметка ссылки на скачивание приложения
             -->
             <div class="page-header__bottom">
-            <a class="page-header__download" href="#">Скачать приложение</a>
+            <a class="page-header__bottom-download" href="#">Скачать приложение</a>
             <!--
                 Список с иконками платформ, на которых можно скачать наше приложение
             -->
-            <ul class="page-header__platforms header-platforms">
+            <ul class="page-header__bottom-platforms header-platforms">
                 <li class="header-platforms__item platforms-item">
                     <a class="platforms-item__link platforms-link">
                     <svg class="platforms-link__image" xmlns="http://www.w3.org/2000/svg" width="46.21" height="56.753" version="1" viewBox="0 0 46.21 56.753">
@@ -92,7 +93,7 @@
             <!--
                 Разметка краткого описания где доступно наше приложение
             -->
-            <p class="page-header__description">
+            <p class="page-header__bottom-description">
                 Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
             </div>
@@ -100,7 +101,7 @@
     
     </header>
     <!--
-        / And this the end of header section of page!
+        / Конец разметки шапки страницы
     -->
     <main class="page-main">
         <section class="promo-features">
@@ -108,12 +109,14 @@
                 <!--
                     Разметка тизера фишек нашего приложения, два заголовка
                 -->
-                <h2 class="promo-features__heading">
+                <div class="promo-features__top">
+                <p class="promo-features__top-heading">
                     Устали от серости мегаполиса?
-                </h2>
-                <h2 class="promo-features__subheading">
+                </p>
+                <p class="promo-features__top-subheading">
                     Нам есть, что вам предложить!
-                </h2>
+                </p>
+                </div>
                 <!--
                     Разметка списка фишек приложения
                 -->
@@ -154,72 +157,128 @@
                     Разметка автоматического слайдера с круглыми инпутами внизу
                 -->
                 <!-- Контейнер слайдера -->
-<div class="slideshow-container">
-
+    <div class="promo-feedback__slideshow-container slideshow-container">
     <!-- Слайды -->
-    <div class="mySlides fade">
-      <h2 class="numbertext">Николай Петров</h2>
-      <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+    <div class="slideshow-container__slides slides fade">
+      <p class="slides__heading">Николай Петров</p>
+      <p class="slides__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                        А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
       </p>
     </div>
-  
-    <div class="mySlides fade">
-        <h2 class="numbertext">Петр Васечкин</h2>
-        <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+    <div class="slideshow-container__slides slides fade">
+        <p class="slides__heading">Петр Васечкин</p>
+        <p class="slides__text">«Данное приложение просто пушечка и оно позволило по-новому взглянуть на привычные унылые и скучные вещи!
+                         Ну и между прочим я познакомился со своей девушкой в обсуждении нового альбома группы "The 1975"»
         </p>
     </div>
   
-    <div class="mySlides fade">
-        <h2 class="numbertext">Василий Николаев</h2>
-        <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+    <div class="slideshow-container__slides slides fade">
+        <p class="slides__heading">Ирина Барабанова</p>
+        <p class="slides__text">«Я влюбилась в это приложение с первого клика! Сама концепция приложения, дизайн, периодичность полезных обновлений!
+            Ну и система лояльности тоже безумно порадовала!»
         </p>
     </div>
-      <!-- Стрелочки переключения слайдов -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
     <!-- Точки/переключатели слайдов -->
-<div style="text-align:center">
+<div class="promo-feedback__dots" style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
   </div>
             </div>
-        </section>
+        </div></section>
         <section class="promo-prices">
             <div class="promo-prices__wrapper">
+                <input class="promo-prices__input" type="radio" name="price-radio" id="price-radio-1">
+                <input class="promo-prices__input" type="radio" name="price-radio" id="price-radio-2" checked="">
+                <input class="promo-prices__input" type="radio" name="price-radio" id="price-radio-3">
                  <!-- Контейнер слайдов -->
                 <div class="slideshow-container">
-                    <!-- Слайды -->
-                    <div class="mySlides fade">
-                      <h2 class="numbertext">Николай Петров</h2>
-                      <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                                       А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                      </p>
-                    </div>
-                  
-                    <div class="mySlides fade">
-                        <h2 class="numbertext">Петр Васечкин</h2>
-                        <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                        </p>
-                    </div>
-                  
-                    <div class="mySlides fade">
-                        <h2 class="numbertext">Василий Николаев</h2>
-                        <p class="text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                        </p>
-                    </div>
+                    <table class="promo-prices__table prices-table">
+                        <thead class="prices-table__head table-head">
+                            <th class="table-head__cell head-cell">
+                                <p class="head-cell__name">
+                                    База
+                                </p>
+                                <p class="head-cell__price">
+                                    1,99 USD
+                                </p>
+                            </th>
+                            <th class="table-head__cell--flag head-cell">
+                                <p class="head-cell__name">
+                                    Стандарт
+                                </p>
+                                <p class="head-cell__price">
+                                    3,99 USD
+                                </p>
+                            </th>
+                            <th class="table-head__cell head-cell">
+                                <p class="head-cell__name">
+                                    Анлим
+                                </p>
+                                <p class="head-cell__price">
+                                    9,99 USD
+                                </p>
+                            </th>
+                        </thead>
+                        <tbody class="prices-table__body table-body">
+                            <tr class="table-body__row table-row">
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Розовый фильтр
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Розовый фильтр
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Розовый фильтр
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="table-body__row table-row">
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Смайлики
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Смайлики
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Смайлики
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="table-body__row table-row">
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Комментарии
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Комментарии
+                                    </p>
+                                </td>
+                                <td class="table-row__cell">
+                                    <p class="table-row__cell__name">
+                                        Комментарии
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <!-- Точки/переключатели слайдов -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
+                <div class="slideshow-container__controls slideshow-controls" style="text-align:center">
+                    <label for="price-radio-1" class="slideshow-controls__dot point" onclick="currentSlides(1)"></label> 
+                    <label for="price-radio-2" class="slideshow-controls__dot point" onclick="currentSlides(2)"></label> 
+                    <label for="price-radio-3" class="slideshow-controls__dot point" onclick="currentSlides(3)"></label> 
                   </div>
             </div>
         </div></section>
@@ -258,6 +317,10 @@
         </section>
     </main>
     <script src="js/menu-script.js">
+    </script>
+    <script src="js/slide-script.js">
+    </script>
+    <script src="js/second-slide-script.js">
     </script>
 </body>
 </html>

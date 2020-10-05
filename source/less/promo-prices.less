@@ -1,0 +1,103 @@
+.promo-prices__wrapper {
+    width: 100%;
+    min-height: 506px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    padding-top: 80px;
+}
+.promo-prices__input {
+    display: none;
+}
+.prices-table {
+    width: 840px;
+    box-sizing: border-box;
+    border:2px solid #e5e5e5;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.head-cell {
+    width: 276px;
+    height: 94px;
+    background-color: #283645;
+    border:2px solid #ffffff;
+}
+.head-cell__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.head-cell__price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.table-row__cell {
+    width: 276px;
+    height: 59px;
+    padding-left: 22px;
+    border:2px solid #e5e5e5;
+}
+.table-row__cell__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#283645;
+}
+.slideshow-container__controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+.slideshow-controls__dot {
+    cursor: pointer;
+    height: 6px;
+    width: 6px;
+    background-color: #283645;
+    opacity: 0.3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-right: 13px;
+  }
+  .slideshow-controls__dot:last-of-type {
+      margin-right: 0px;
+  }
+    #price-radio-2:checked ~ .slideshow-container .slideshow-controls label[for=price-radio-2] {
+    display: inline-block;
+    border:3px solid #283645;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+  #price-radio-1:checked ~ .slideshow-container .slideshow-controls label[for=price-radio-1] {
+    display: inline-block;
+    border:3px solid #283645;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+  #price-radio-3:checked ~ .slideshow-container .slideshow-controls label[for=price-radio-3] {
+    display: inline-block;
+    border:3px solid #283645;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+  #price-radio-1:checked ~ .slideshow-container .prices-table {
+    transition-duration: 0.7s;
+}
+  #price-radio-2:checked ~ .slideshow-container .prices-table {
+    transform:translateX(-280px);
+    transition-duration: 0.7s;
+}
+#price-radio-3:checked ~ .slideshow-container .prices-table {
+    transform:translateX(-560px);
+    transition-duration: 0.7s;
+}
