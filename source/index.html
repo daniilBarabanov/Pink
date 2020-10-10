@@ -38,10 +38,10 @@
                         <a class="nav-list__item-link site-list__item-link--active" href="#">Главная</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__item-link" href="#">Фотографии</a>
+                        <a class="nav-list__item-link" href="photos.html">Фотографии</a>
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-list__item-link" href="#">Конкурс</a>
+                        <a class="nav-list__item-link" href="form.html">Конкурс</a>
                     </li>
                     <li class="nav-list__item">
                         <a class="nav-list__item-link" href="#">HTML Academy</a>
@@ -203,7 +203,7 @@
                                     1,99 USD
                                 </p>
                             </th>
-                            <th class="table-head__cell--flag head-cell">
+                            <th class="table-head__cell--flag head-cell head-cell--hit">
                                 <p class="head-cell__name">
                                     Стандарт
                                 </p>
@@ -222,51 +222,51 @@
                         </thead>
                         <tbody class="prices-table__body table-body">
                             <tr class="table-body__row table-row">
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Розовый фильтр
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Розовый фильтр
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Розовый фильтр
                                     </p>
                                 </td>
                             </tr>
                             <tr class="table-body__row table-row">
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--no">
                                     <p class="table-row__cell__name">
                                         Смайлики
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Смайлики
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Смайлики
                                     </p>
                                 </td>
                             </tr>
                             <tr class="table-body__row table-row">
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--no">
                                     <p class="table-row__cell__name">
                                         Комментарии
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--no">
                                     <p class="table-row__cell__name">
                                         Комментарии
                                     </p>
                                 </td>
-                                <td class="table-row__cell">
+                                <td class="table-row__cell table-row__cell--yes">
                                     <p class="table-row__cell__name">
                                         Комментарии
                                     </p>
@@ -279,6 +279,7 @@
                     <label for="price-radio-1" class="slideshow-controls__dot point" onclick="currentSlides(1)"></label> 
                     <label for="price-radio-2" class="slideshow-controls__dot point" onclick="currentSlides(2)"></label> 
                     <label for="price-radio-3" class="slideshow-controls__dot point" onclick="currentSlides(3)"></label> 
+                  </div>
                   </div>
             </div>
         </section>
@@ -308,7 +309,7 @@
                         <p class="contacts-item__heading">
                             Приезжайте в гости:
                         </p>
-                        <p class="contacts-item__description">
+                        <p class="contacts-item__description description-adress">
                             ул. Большая Конюшенная, 19/8
                         </p>
                     </li>
@@ -316,11 +317,9 @@
             </div>
         </section>
     </main>
-    <script src="js/menu-script.js">
+    <script async src="js/menu-script.js">
     </script>
-    <script src="js/slide-script.js">
-    </script>
-    <script src="js/second-slide-script.js">
+    <script async src="js/slide-script.js">
     </script>
 </body>
 </html>

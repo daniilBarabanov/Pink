@@ -1,0 +1,69 @@
+.promo-contacts {
+    width: 100%;
+    min-height: 614px;
+    background:    url(../img/map-marker-svg.svg),
+     url(../img/layer-153.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 36px 35px,cover;
+    background-position: 50% 86%, bottom;
+}
+.promo-contacts__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 395px;
+    background-color: #ffffff;
+}
+.promo-contacts__wrapper::after {
+    content: '';
+    background: url(../img/triangle-white-footer-svg.svg) no-repeat,;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 61px;
+    position: absolute;
+    bottom:-47px;
+    left: 1px;
+}
+.promo-contacts__heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color:#283645;
+    width:70%;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.contacts-item:last-of-type {
+    margin-bottom: 0px;
+}
+.contacts-item__heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contacts-item__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color:#d22856;
+    text-align: center;
+}
+.description-adress {
+    background-color: #ffffff;
+    width: 212px;
+}

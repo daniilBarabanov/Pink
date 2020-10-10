@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приложение Pink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header page-header--photos">
+        <div class="page-header__wrapper--photos">
+            <h1 class="visually-hidden">Pink</h1>
+            <!--
+                Это разметка Лого Странички (лого-ссылка)
+            -->
+            <div class="page-header__top" id="header-top">
+            <a class="page-header__logo" href="#" aria-label="Переход на главную страницу">
+                <svg class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" version="1" viewBox="0 0 74.426 22.859">
+                    <g fill="#FFF">
+                        <path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"></path>
+                    </g>
+                </svg>  
+            </a>
+            <!--
+                Разметка главной навигации сайта, будет реализовано через JS
+            -->
+            <span class="page-header__menu" onclick="myFunction()">
+            </span>
+            </div>
+            <nav class="page-header__nav main-nav" id="myLinks">
+                <ul class="main-nav__list nav-list">
+                    <li class="nav-list__item">
+                        <a class="nav-list__item-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__item-link site-list__item-link--active" href="#">Фотографии</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__item-link" href="form.html">Конкурс</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__item-link" href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-header__top-bottom--photos" id="page-header__top-bottom">
+            <h2 class="page-header__heading--photos">
+                Фотографии пользователей
+            </h2>
+            </div>
+        </div></header>
+        <main class="catalog-main">
+            <section class="promo-photos">
+                <div class="promo-photos__wrapper">
+                <p class="promo-photos__tagline">
+                    Взгляните на фотографии, которые выкладывают пользователи!
+                    Видите, как не хватает ваших?
+                </p>
+                <img class="photos-item__image--wideangle" src="../img/panorama-mobile-jpg.jpg" width="320" height="137" alt="Фото панорамы дня">
+                <ul class="promo-photos__list photos-list">
+                    <li class="photos-list__item photos-item">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Анна</span>
+                        <span class="photos-item__name-date__time">(5 минут назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+                            задавайте свои вопросы!
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 215</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-1-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Левон</span>
+                        <span class="photos-item__name-date__time">(5 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Вчера он на луну летал, сегодня в руки к нам попал.
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 356</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-2-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Антон</span>
+                        <span class="photos-item__name-date__time">(12 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Соседи будут рады!
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 666</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-3-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Борис</span>
+                        <span class="photos-item__name-date__time">(20 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Здесь могла быть ваша цитата о высоком и вечном.
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 215</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-4-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Сергей</span>
+                        <span class="photos-item__name-date__time">(25 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Самая кубанская в мире!
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 4</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-5-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Максим</span>
+                        <span class="photos-item__name-date__time">(40 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Где снег-то?
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 150</a>
+                    </li>
+                    <li class="photos-list__item photos-item">
+                        <img class="photos-item__image--wideangle" src="../img/photo-6-mobile-jpg.jpg" width="280" height="137" alt="Фото панорамы дня">
+                        <div class="photos-item__name-date">
+                        <span class="photos-item__name-date__name">Надежда</span>
+                        <span class="photos-item__name-date__time">(45 часов назад)</span>
+                        </div>
+                        <p class="photos-item__description">
+                            Всем GM и взаимные лайки!
+                        </p>
+                        <a class="photos-item__likes" href="#">Нравится: 2560</a>
+                    </li>
+                </ul>
+                <p class="promo-photos__closing-tagline">
+                    Затми их всех! <br>Выкладывайте все, что накопилось в телефоне!
+                </p>
+                </div>
+            </section>
+            <section class="promo-posting">
+                <div class="promo-posting__wrapper">
+                <img class="promo-posting__image" src="../img/photo-7-mobile-jpg.jpg" width="280" height="374" alt="Фото для поста">
+                </div>
+                <ul class="promo-posting__filters posting-filters">
+                    <li class="posting-filters__item filters-item">
+                        <svg class="filter-item__image--active" xmlns="http://www.w3.org/2000/svg" width="44" height="44" version="1.0" viewBox="0 0 48 48">
+                            <path fill="none" d="M0 0h48v48H0V0z"></path>
+                            <path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"></path>
+                        </svg>
+                    </li>
+                    <li class="posting-filters__item filters-item">
+                        <svg class="filter-item__image" xmlns="http://www.w3.org/2000/svg" width="48" height="43" version="1.0" viewBox="0 0 48 48">
+                            <path fill="none" d="M0 0h48v48H0V0z"></path>
+                            <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88c-1.17 1.17-1.17 3.07 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11c1.17-1.17 1.17-3.07 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40H48V43H0z"></path>
+                        </svg>                        
+                    </li>
+                    <li class="posting-filters__item filters-item">
+                        <svg class="filter-item__image" xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1" viewBox="-35.422 -7.96 31.92 31.92">
+                            <path fill="#231F20" d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"></path>
+                            <path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"></path>
+                        </svg>                        
+                    </li>
+                </ul>
+                <div class="promo-posting__range-controls posting-range">
+                    <div class="posting-range__scale range-scale">
+                      <div class="range-scale__bar"></div>
+                    </div>
+                    <div class="promo-posting__range-toggle range-toggle-min"></div>
+                  </div>
+                  <ul class="promo-posting__list posting-list">
+                      <li class="posting-list__item">
+                        <a class="posting-list__item-post links-item" href="#">Запостить</a>
+                </li>
+                     <li class="posting-list__item">
+                        <a class="posting-list__item-cancel links-item" href="#">Отменить</a>
+                </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="page-footer page-footer--photos">
+            <img class="page-footer__logo" src="../img/logotype-blue-tablet-svg.svg" width="147" height="40" alt="Лого Pink">
+            <ul class="page-footer__socials footer-socials">
+                <li class="footer-socails__item socials-item">
+                    <a class="socials-item__link socials-link">
+                        <svg class="socials-link__image" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663" version="1" viewBox="0 0 17.5 14.663">
+                            <path fill="#d22856" fill-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-socails__item socials-item">
+                    <a class="socials-item__link socials-link">
+                        <svg class="socials-link__image" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944" version="1.0" viewBox="0 0 8.673 18.944">
+                            <path fill="#d22856" d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"></path>
+                        </svg>
+                        
+                    </a>
+                </li>
+                <li class="footer-socails__item socials-item">
+                    <a class="socials-item__link socials-link">
+                        <svg class="socials-link__image" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" version="1" viewBox="0 0 14.64 13.96">
+                            <path fill="#d22856" d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"></path>
+                        </svg>                        
+                    </a>
+                </li>
+            </ul>
+            <div class="page-footer__developed">
+                <p class="page-footer__developed-text">
+                    Разработано
+                </p>
+                <svg class="page-footer__developed-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" version="1" viewBox="0 0 26.943 34.09">
+                    <path fill="#d22856" d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"></path>
+                </svg>
+                
+            </div>
+        </footer>
+    <script src="js/menu-script.js">
+    </script>
+</body>
+</html>

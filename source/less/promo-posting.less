@@ -1,0 +1,113 @@
+.promo-posting {
+    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f2f2f2;
+    min-height: 757px;
+}
+.promo-posting__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo-posting__image {
+    width: 100%;
+    max-height: 374px;
+}
+.posting-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    margin-top: 32px;
+}
+.filter-item__image--active {
+    fill: #d22856;
+}
+.filter-item__image {
+    opacity: 0.3;
+}
+.promo-posting__range-controls{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 73px;
+}
+.range-scale {
+    width: 90%;
+}
+.posting-range__scale {
+    height: 2px;
+  
+    background: #283645;
+}
+.promo-posting__range-toggle {
+    position: absolute;
+    top: -8px;
+    
+    width: 12px;
+    height: 13px;
+  
+    background: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    left: 230px;
+    z-index: 2;
+}
+.promo-posting__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.posting-list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.posting-list__item:last-of-type {
+    margin-bottom: 0px;
+}
+.links-item {
+    text-decoration: none;
+}
+.posting-list__item-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color:#d22856;
+    width: 100%;
+    height: 55px;
+    border:3px solid #d22856;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.posting-list__item-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color:#283645;
+    width: 100%;
+    height: 55px;
+    border:3px solid #283645;
+    border-radius: 45px;
+    opacity: 0.1;
+    cursor: pointer;
+}
