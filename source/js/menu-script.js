@@ -17,7 +17,7 @@ function myFunction() {
     } else {
       x.style.display = "block";
       y.style.background = "#283645 ";
-      z.style.background = "url(../img/back-mobile-1-x-jpg.png)"
+      z.style.background = "url(../img/back-tablet-1-x-jpg.png)"
       z.style.backgroundPosition = "0"
       z.style.backgroundRepeat = "no-repeat"
       z.style.backgroundSize = "cover"
