@@ -35,6 +35,12 @@
 .photos-item__image--wideangle {
     width: 100%;
 }
+.photos-item_image--tablet {
+    display: none;
+}
+.photos-item_image-wideangle--tablet {
+    display: none;
+}
 .photos-item__name-date {
     margin-top: 18px;
 }
@@ -51,6 +57,17 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
+}
+.photos-item--wide {
+    background-color: #f2f2f2;
+}
+.photos-item--wide-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color:#283645;
+    margin-left: 17px;
 }
 .photos-item__description {
     font-family: 'Open Sans', sans-serif;
@@ -83,6 +100,29 @@
     left:18px;
     cursor: pointer;
 }
+.photos-item--wide-likes {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#d22856;
+    margin-top: 15px;
+    padding-left: 50px;
+    margin-bottom: 25px;
+}
+.photos-item--wide-likes::before {
+    content: '';
+    background: url(../img/icon-heart-svg-copy-5.svg) no-repeat;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left:18px;
+    cursor: pointer;
+}
 .promo-photos__closing-tagline {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -94,4 +134,118 @@
     margin-top: 59px;
     margin-bottom: 59px;
     text-align: center;
+}
+@media(min-width:@tablet-width) {
+    .promo-photos__tagline {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+        color:#283645;
+        text-align: center;
+        width: 79%;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+    .photos-item__image--wideangle {
+        display: none;
+    }
+    .photos-item_image-wideangle--tablet {
+        display: block;
+        width: 100%;
+    }
+    .photos-item__name-date {
+        margin-top: 18px;
+        max-height: 20px;
+    }
+    .photos-item_image--tablet {
+        display: block;
+    } 
+    .photos-item--wide {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+    }
+    .photos-item--wide-name-date {
+        order:1;
+    }
+    .photos-item--wide-likes {
+        order:2;
+    }
+    .photos-item--wide-description{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color:#283645;
+        margin-left: 28px;
+        order:3;
+    }
+
+    .photos-item--wide-likes {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        margin-left: 300px;
+    }
+    .photos-item--wide-likes::before {
+        content: '';
+        background: url(../img/icon-heart-svg-copy-5.svg) no-repeat;
+        width: 13px;
+        height: 12px;
+        position: absolute;
+        top: 5px;
+        left:110px;
+        cursor: pointer;
+    }
+    .photos-item__likes::before {
+        content: '';
+        background: url(../img/icon-heart-svg-copy-5.svg) no-repeat;
+        width: 13px;
+        height: 12px;
+        position: absolute;
+        top: 5px;
+        left:110px;
+        cursor: pointer;
+    }
+    .photos-list {
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        overflow: visible;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .photos-item {
+        width:40%;
+        min-width: 300px;
+        min-height: 455px;
+    }
+    .photos-item:nth-child(2n){
+        margin-right: 20px;
+    }
+    .photos-item:last-child {
+        height: 455px;
+    }
+    .photos-item__name-date {
+        margin-left: 28px;
+    }
+    .photos-item__name-date__name {
+        margin-left: 0px;
+    }
+    .photos-item__description {
+        min-width: 232px;
+        margin-left: 28px;
+    }
+    .photos-item__likes {
+        padding:0px;
+        margin-left: 28px;
+    }
+    .photos-item--wide {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 121px;
+    }
 }

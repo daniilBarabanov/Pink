@@ -4,8 +4,8 @@
     background:    url(../img/map-marker-svg.svg),
      url(../img/layer-153.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: 36px 35px,cover;
-    background-position: 50% 86%, bottom;
+    background-size: 36px 35px,100% 100%;
+    background-position: 50% 88%, bottom;
 }
 .promo-contacts__wrapper {
     position: relative;
@@ -18,7 +18,7 @@
 }
 .promo-contacts__wrapper::after {
     content: '';
-    background: url(../img/triangle-white-footer-svg.svg) no-repeat,;
+    background: url(../img/triangle-white-footer-svg.svg) no-repeat;
     background-size:cover;
     background-position: center;
     width: 100%;
@@ -65,4 +65,43 @@
 .description-adress {
     background-color: #ffffff;
     width: 212px;
+}
+@media(min-width:@tablet-width) {
+    .promo-contacts {
+        min-height: 760px;
+        background:    url(../img/map-marker-svg.svg),
+        url(../img/layer-153-tablet.jpg);
+       background-repeat: no-repeat, no-repeat;
+       background-size: 36px 35px,100% 100% ;
+       background-position: 50% 79%, 1px 100px;
+    }
+    .promo-contacts__wrapper::after {
+        content: '';
+        background: url(../img/triangle-white-footer-svg.svg) no-repeat;
+        background-size:100% 100px;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: -84px;
+    }
+    .promo-contacts__heading {
+        font-size: 40px;
+    }
+    .contacts-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        width:87%;
+    }
+    .contacts-item {
+        min-width: 204px;
+    }
+    .contacts-item__heading {
+        margin-bottom: 6px;
+    }
+    
 }

@@ -50,6 +50,9 @@
     width: 87%;
     min-height: 180px;
   }
+  .slides__profession {
+    display: none;
+  }
   
   
   /* Индикаторы переключения слайдов */
@@ -99,4 +102,37 @@
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+  }
+  
+  @media(min-width:@tablet-width) {
+    .promo-feedback__slideshow-container {
+      min-height: 300px;
+    }
+    .promo-feedback__slideshow-container::after {
+      display: none;
+    }
+    .promo-feedback__slideshow-container {
+      padding-top: 80px;
+    }
+    .slides__heading {
+      font-size: 20px;
+      line-height: 30px;
+      margin:0;
+      margin-top:44px;
+    }
+    .slides__text {
+      order: -1;
+      font-size: 18px;
+      line-height: 30px;
+      width:94%;
+      min-height: 79px;
+    }
+    .slides__profession {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 500;
+      color:#283645;
+      display: block;
+    }
   }
